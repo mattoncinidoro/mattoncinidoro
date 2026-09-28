@@ -39,22 +39,13 @@
 
   <section id="voto">
     <h2>Come funziona il voto (0-100)</h2>
-    <p>Il voto somma quattro fattori. I dati vengono da fonti pubbliche e dallo storico prezzi raccolto dal bot.</p>
+    <p>Il voto è calcolato da un algoritmo che combina più fattori, pesati in base a quanto incidono sul valore collezionistico di un set. I dati vengono da fonti pubbliche e dallo storico prezzi raccolto dal bot.</p>
     <div class="grid">
-      <div class="card"><div class="pts">35</div><h3>Ritiro dal mercato</h3><p>Più il set è vicino al ritiro, più punti. Fonte: Brick Tap.</p></div>
-      <div class="card"><div class="pts">30</div><h3>Sconto sul listino</h3><p>Sconto rispetto al prezzo di listino europeo. Fonte: Brickset.</p></div>
-      <div class="card"><div class="pts">20</div><h3>Minifigure esclusive</h3><p>Valore delle minifigure presenti solo in quel set, confrontato con il prezzo.</p></div>
-      <div class="card"><div class="pts">15</div><h3>Storico prezzi</h3><p>Il prezzo di oggi rispetto agli ultimi 90 giorni in tutti i negozi.</p></div>
+      <div class="card"><h3>⏳ Uscita di produzione</h3><p>Quanto manca al ritiro del set dal mercato.</p></div>
+      <div class="card"><h3>🏷️ Sconto</h3><p>Il prezzo dell'offerta rispetto al listino europeo.</p></div>
+      <div class="card"><h3>🧑‍🚀 Minifigure esclusive</h3><p>Il valore delle minifigure che si trovano solo in quel set.</p></div>
+      <div class="card"><h3>📉 Storico prezzi</h3><p>Se il prezzo di oggi è davvero basso rispetto ai mesi precedenti.</p></div>
     </div>
-
-    <h3>Nel dettaglio</h3>
-    <div class="table-scroll"><table>
-      <tr><th>Fattore</th><th>Punteggio</th></tr>
-      <tr><td>Ritiro</td><td>entro 3 mesi 35 · 3-6 mesi 29,8 · 6-12 mesi 21 · 1-2 anni 10,5 · oltre 2 anni o non noto 3,5</td></tr>
-      <tr><td>Sconto</td><td>≥40% 30 · 30-39% 24 · 25-29% 16,5 · 20-24% 9 · 10-19% 3 · sotto 10% 0</td></tr>
-      <tr><td>Minifigure esclusive</td><td>valore stimato (ridotto prudenzialmente del 50%) rispetto al prezzo: ≥50% 20 · 30-49% 15 · 15-29% 10 · 5-14% 5 · meno 0</td></tr>
-      <tr><td>Storico prezzi</td><td>nuovo minimo 15 · entro il 3% dal minimo 12 · sotto la media 7,5 · prezzo abituale 3 · dati insufficienti 5</td></tr>
-    </table></div>
 
     <h3>Le fasce</h3>
     <div class="bands">

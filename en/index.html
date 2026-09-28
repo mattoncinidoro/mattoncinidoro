@@ -39,22 +39,13 @@
 
   <section id="score">
     <h2>How the score works (0-100)</h2>
-    <p>The score adds up four factors. Data comes from public sources and from the price history collected by the bot.</p>
+    <p>The score is computed by an algorithm that combines several factors, weighted by how much they affect a set's collector value. Data comes from public sources and from the price history collected by the bot.</p>
     <div class="grid">
-      <div class="card"><div class="pts">35</div><h3>Retirement</h3><p>The closer a set is to retirement, the more points. Source: Brick Tap.</p></div>
-      <div class="card"><div class="pts">30</div><h3>Discount</h3><p>Discount versus the European list price. Source: Brickset.</p></div>
-      <div class="card"><div class="pts">20</div><h3>Exclusive minifigures</h3><p>Value of minifigures found only in that set, compared with the price.</p></div>
-      <div class="card"><div class="pts">15</div><h3>Price history</h3><p>Today's price versus the last 90 days across all shops.</p></div>
+      <div class="card"><h3>⏳ Retirement</h3><p>How soon the set is expected to leave the market.</p></div>
+      <div class="card"><h3>🏷️ Discount</h3><p>The deal price versus the European list price.</p></div>
+      <div class="card"><h3>🧑‍🚀 Exclusive minifigures</h3><p>The value of minifigures found only in that set.</p></div>
+      <div class="card"><h3>📉 Price history</h3><p>Whether today's price is truly low compared with previous months.</p></div>
     </div>
-
-    <h3>In detail</h3>
-    <div class="table-scroll"><table>
-      <tr><th>Factor</th><th>Points</th></tr>
-      <tr><td>Retirement</td><td>within 3 months 35 · 3-6 months 29.8 · 6-12 months 21 · 1-2 years 10.5 · over 2 years or unknown 3.5</td></tr>
-      <tr><td>Discount</td><td>≥40% 30 · 30-39% 24 · 25-29% 16.5 · 20-24% 9 · 10-19% 3 · under 10% 0</td></tr>
-      <tr><td>Exclusive minifigures</td><td>estimated value (cautiously halved) versus price: ≥50% 20 · 30-49% 15 · 15-29% 10 · 5-14% 5 · less 0</td></tr>
-      <tr><td>Price history</td><td>new low 15 · within 3% of the low 12 · below average 7.5 · usual price 3 · not enough data 5</td></tr>
-    </table></div>
 
     <h3>Rating bands</h3>
     <div class="bands">
